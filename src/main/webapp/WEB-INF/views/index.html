@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shedule</title>
+</head>
+<body>
+<h2>Schedule of lessons</h2>
+
+<table th:each="group: ${groups}">
+    <CAPTION>Group:<a th:utext="*{group.number}">522</a></CAPTION>
+        <td>
+            <table id="table2" border="1">
+                <tr align="center">
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+                <tr >
+                    <td><table>
+                        <tr><td height="5" th:utext="*{group.monday.firstLessonName}"></td></tr>
+                        <tr><td height="5" th:utext="*{group.monday.firstAudience}" ></td></tr>
+                        <tr><td height="5" th:utext="*{group.monday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.monday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.monday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.monday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.monday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.monday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.monday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td th:utext="*{group.thuesday.firstLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.firstAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thuesday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thuesday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thuesday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thuesday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td th:utext="*{group.wednesday.firstLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.firstAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.wednesday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.wednesday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.wednesday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.wednesday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td th:utext="*{group.thursday.firstLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.firstAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thursday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thursday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thursday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thursday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.thursday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.thursday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td th:utext="*{group.friday.firstLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.firstAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.friday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.friday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.friday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.friday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.friday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.friday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td th:utext="*{group.saturday.firstLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.firstAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.firstLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.saturday.secondLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.secondAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.secondLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.saturday.thirdLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.thirdAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.thirdLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.saturday.fourthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.fourthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.fourthLecturer}"></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.saturday.fifthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.fifthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.fifthLecturer}" ></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td th:utext="*{group.saturday.sixthLessonName}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.sixthAudience}" ></td></tr>
+                        <tr><td th:utext="*{group.saturday.sixthLecturer}" ></td></tr>
+                    </table></td>
+                </tr>
+            </table>
+                </tr>
+            </table>
+        </td>
+
+</table>
+</body>
+</html>

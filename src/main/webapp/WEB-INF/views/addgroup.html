@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shedule</title>
+</head>
+<body>
+<h2>Schedule of lessons</h2>
+
+<form action="#" th:action="@{/groups/saveGroup}" th:object="${group}" method="post">
+    <table>
+        <tr><th><input type="number" th:field="*{number}" placeholder="Group number" /></th></tr>
+        <td>
+            <table id="table2" border="1">
+                <tr align="center">
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+                <tr>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{monday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{monday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{monday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{thuesday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thuesday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thuesday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{wednesday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{wednesday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{wednesday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{thursday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{thursday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{thursday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{friday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{friday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{friday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td><input type="text" th:field="*{saturday.firstLessonName}" placeholder="Lesson name 1" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.firstAudience}" placeholder="Audience number 1" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.firstLecturer}" placeholder="Lecturer name 1" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.secondLessonName}" placeholder="Lesson name 2" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.secondAudience}" placeholder="Audience number 2" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.secondLecturer}" placeholder="Lecturer name 2" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.thirdLessonName}" placeholder="Lesson name 3" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.thirdAudience}" placeholder="Audience number 3" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.thirdLecturer}" placeholder="Lecturer name 3" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.fourthLessonName}" placeholder="Lesson name 4" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.fourthAudience}" placeholder="Audience number 4" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.fourthLecturer}" placeholder="Lecturer name 4" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.fifthLessonName}" placeholder="Lesson name 5" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.fifthAudience}" placeholder="Audience number 5" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.fifthLecturer}" placeholder="Lecturer name 5" /></td></tr>
+                        <tr><td><hr/></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.sixthLessonName}" placeholder="Lesson name 6" /></td></tr>
+                        <tr><td><input type="number" th:field="*{saturday.sixthAudience}" placeholder="Audience number 6" /></td></tr>
+                        <tr><td><input type="text" th:field="*{saturday.sixthLecturer}" placeholder="Lecturer name 6" /></td></tr>
+                    </table></td>
+                </tr>
+
+            </table>
+        </td>
+        <tr align="center">
+            <td><input type="submit" value="Create" /><input type="reset" value="Reset" /></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
